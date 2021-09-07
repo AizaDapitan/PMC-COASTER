@@ -1,0 +1,92 @@
+    <div class="header">
+      <div class="container">
+        <a class="site-logo" href="{{ url('/admin/booking') }}">PMC Booking System</a>
+
+        <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
+
+        <!-- BEGIN NAVIGATION -->
+        <div class="header-navigation pull-right font-transform-inherit">
+
+          <ul>
+              <li class ="{{ Request::is('admin/booking') ? 'active' : '' }}"><a href="{{ url('/admin/booking') }}">Booking</a></li>
+              <li class ="{{ Request::is('admin/closing') ? 'active' : '' }}"><a href="{{ url('/admin/closing') }}">Closing</a></li>
+
+              <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">Employees</a>
+
+                  <ul class="dropdown-menu">
+                      <li><a href="{{ url('/admin/employees') }}">Employee Listing</a></li>
+                      <li><a href="{{ url('/admin/priority') }}">Priority</a></li>
+                      <li><a href="{{ url('/admin/blacklist') }}">Blacklist</a></li>
+                  </ul>
+              </li>    
+              
+              <li class="dropdown {{ Request::is('admin/user*') ? 'active' : '' }}">
+                  <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">Maintenance</a>
+
+                  <ul class="dropdown-menu">
+                      <li><a href="{{ url('/admin/users') }}">Users</a></li>
+<<<<<<< HEAD
+                      <li><a href="user-rights.html">User Access Rights</a></li>
+                  </ul> 
+              </li>
+              
+              <li class="dropdown {{ Request::is('admin/role*') ? 'active' : '' }}">
+=======
+                      <li><a href="user-rights.html">User Rights</a></li>
+                  </ul>
+              </li>
+              
+              <li class="dropdown">
+>>>>>>> 0a7c64b501adcad15614498f8696c5b80a257ef8
+                  <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">Account Management</a>
+
+                  <ul class="dropdown-menu">
+                      <li><a href="{{ url('/admin/roles') }}">Roles</a></li>
+<<<<<<< HEAD
+                      <li><a href="access-rights.html">Role Access Rights</a></li>
+=======
+                      <li><a href="{{ url('/admin/permissions') }}">Permissions</a></li>
+                      <li><a href="access-rights.html">Access Rights</a></li>
+>>>>>>> 0a7c64b501adcad15614498f8696c5b80a257ef8
+                  </ul>
+              </li>              
+
+              <li class="dropdown {{ Request::is('admin/reports*') ? 'active' : '' }}">
+                <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
+                  Reports
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li class="{{ Request::is('admin/reports/booking-summary') ? 'active' : '' }}"><a href="{{ url('/admin/reports/booking-summary') }}">Booking Summary</a></li>
+                  <li class="{{ Request::is('admin/reports/booking-history') ? 'active' : '' }}"><a href="{{ url('/admin/reports/booking-history') }}">Booking History</a></li>
+                  <li class="{{ Request::is('admin/reports/booking-per-employee') ? 'active' : '' }}"><a href="{{ url('/admin/reports/booking-per-employee') }}">Booking per Employee</a></li>
+                  <li class="{{ Request::is('admin/reports/feedback') ? 'active' : '' }}"><a href="{{ url('/admin/reports/feedback') }}">System Feedback</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">
+                  Documentation
+                </a>
+
+                <ul class="dropdown-menu">
+                 <li><a href="https://mlappsvr.philsaga.com:8013/files/Final%20User%20Guide%20for%20Admin%20-%20Coaster%20Booking%20System.pdf" target="_blank"> User Manual </a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#">My Account</a>
+
+                  <ul class="dropdown-menu">
+                      <li><a href="/admin/change-password">Change Password</a></li>
+                      <li><a href="{{ url('/logout') }}">Logout</a></li>
+                  </ul>
+              </li>              
+
+          </ul>
+        </div>
+        <!-- END NAVIGATION -->
+      </div>
+    </div>
+  

@@ -1,0 +1,19 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Role extends Model
+{
+<<<<<<< HEAD
+    protected $fillable = [
+        'name', 
+        'description', 
+        'active',
+    ];
+=======
+    protected $guarded = [];
+
+>>>>>>> 175d8a636cd77f34c056c08adeb263ead8456e0d
+}
